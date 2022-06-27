@@ -27,9 +27,7 @@ public class MainActivity extends Activity {
       Glide.with(MainActivity.this).asGif()
           .load("https://qcloudimg.tencent-cloud.cn/raw/0557d8080490016d04031acb0c4f4889.gif")
           .into(imageView1);
-      Glide.with(MainActivity.this)
-          .load("https://qcloudimg.tencent-cloud.cn/raw/7c2e2852e91a3d0bc2ea38880ac306ff.jpg")
-          .into(imageView2);
+      Glide.with(MainActivity.this).load(getDrawable(R.drawable.cat)).into(imageView2);
       Glide.with(MainActivity.this)
           .load("https://qcloudimg.tencent-cloud.cn/raw/7c2e2852e91a3d0bc2ea38880ac306ff.jpg")
           .into(imageView3);
